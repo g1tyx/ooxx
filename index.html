@@ -1062,7 +1062,7 @@
 
             function u(t) {
                 var e = new XMLHttpRequest;
-                e.open("GET", "/assets/audio/" + t + ".mp3", true);
+                e.open("GET", "./assets/audio/" + t + ".mp3", true);
                 e.responseType = "arraybuffer";
                 e.onload = function() {
                     g.decodeAudioData(e.response, function(e) {
